@@ -85,6 +85,7 @@
 
 #top-products-carousel-list {
     display: flex;
+    transform: translateX(-550px);
     top: 80px;
 }
 
@@ -218,6 +219,7 @@
     }
 
     #top-products-carousel-list {
+        transform: translateX(0px);
         display: flex;
         flex-direction: column;
         align-items: center;
