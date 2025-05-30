@@ -2,14 +2,12 @@ var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   loop: true,
-  slidesPerView: 2,
   speed: 1400,
   effect: 'coverflow',
   coverflowEffect: {
     rotate: 30,
     stretch: 1,
     depth: 250,
-    // modifier: 1,
     slideShadows: false,
   },
   autoplay: {
@@ -19,6 +17,17 @@ var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    510: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
   },
   navigation: {
     nextEl: ".swiper-button-next",
